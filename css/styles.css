@@ -190,7 +190,7 @@ li > a {
 .some-facts {
   width: 1440px;
   display: flex;
-  padding: 0px;
+  /* padding: 0px; */
 }
 
 .facts-left {
