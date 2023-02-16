@@ -94,7 +94,7 @@ li > a {
   width: 1440px;
   display: flex;
   align-items: center;
-  padding: 0 250px;
+  padding: 130px 250px;
 }
 
 .features-left {
@@ -106,12 +106,13 @@ li > a {
 }
 
 .feature-right {
-    padding-left: 70px;
+  padding-left: 70px;
 }
 
 .feature-title {
   font-size: 45px;
   font-weight: 700;
+  color: #131313;
 }
 
 .grey-text {
@@ -128,6 +129,64 @@ li > a {
   color: #727272;
   padding: 24px 0 30px 0;
 }
+
+.feature-speciality-left {
+  padding: 0 50px;
+}
+
+.feature-speciality-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-speciality {
+  width: 1440px;
+  display: flex;
+}
+
+.feature-special-title {
+  border-left: 10px solid #ff900e;
+  padding-left: 20px;
+}
+
+.feature-special-title-detail {
+  padding: 15px 0;
+}
+
+.feature-speciality-left-bottom {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 20px;
+}
+
+.speciality {
+  padding: 20px;
+}
+
+.special-feature-title {
+  padding: 10px 0;
+}
+
+.experience-btn {
+  width: 342px;
+  font-weight: 700;
+  font-size: 65px;
+  color: #ffffff;
+  background-color: #ff900e;
+  padding: 40px;
+  border: 0;
+  border-radius: 8px;
+  margin: -90px 0;
+}
+
+.experience-small-text {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+
 
 @media only screen and (max-width: 576px) {
   header,
@@ -152,19 +211,44 @@ li > a {
     font-size: 34px;
     padding: 20px 0;
   }
-  .features{
+  .features {
+    width: auto;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .feature-title {
+    padding-top: 25px;
+  }
+  .features-left {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin: 0;
+  }
+  .feature-speciality{
       width: auto;
       flex-direction: column;
-      padding-left:20px;
-      padding-right:20px;
-      padding-bottom:20px;
   }
-  .feature-title{
-      padding: 25px 0;
+  .feature-special-title{
+      font-size: 30px;
+      padding: 15px;
   }
-  .features-left{
-      grid-template-columns: repeat(1, 1fr);
-      gap: 24px;
-      margin: 0;
+  .feature-speciality-right{
+      align-items: center;
+  }
+  .feature-speciality-right img{
+      width: 100%;
+  }
+  .feature-speciality-left-bottom{
+      padding: 0;
+  }
+  .experience-btn{
+      margin: 10px 0;
+      font-size: 25px;
+  }
+  
+  .hidden{
+      display: none;
   }
 }
