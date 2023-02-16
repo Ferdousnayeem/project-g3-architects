@@ -185,6 +185,56 @@ li > a {
   font-size: 25px;
 }
 
+.some-facts {
+  width: 1440px;
+  display: flex;
+  margin: -60px 200px;
+}
+
+.facts-left {
+  padding-right: 100px;
+}
+
+.facts-left,
+.facts-right {
+  width: 50%;
+}
+
+.facts-detail {
+  padding: 24px 0;
+}
+
+.cards {
+  width: 1440px;
+  padding: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 241.83px;
+  height: 241.83px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 45px;
+  margin: 5px 0;
+  color: #424242;
+}
+
+.card-description {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+
 @media only screen and (max-width: 576px) {
   header,
   .banner {
@@ -217,9 +267,10 @@ li > a {
   }
   .feature-title {
     padding-top: 25px;
+    text-align: start;
   }
-  .feature-right{
-      text-align: center;
+  .features-right {
+    text-align: center;
   }
   .features-left {
     grid-template-columns: repeat(1, 1fr);
@@ -234,14 +285,14 @@ li > a {
     font-size: 30px;
     padding: 15px;
   }
-  .feature-speciality-left{
-      padding: 30px 50px;
+  .feature-speciality-left {
+    padding: 30px 50px;
   }
   .feature-speciality-left-bottom {
     padding: 0;
   }
-  .speciality{
-      padding: 0;
+  .speciality {
+    padding: 0;
   }
   .feature-speciality-right {
     align-items: center;
@@ -253,6 +304,30 @@ li > a {
     margin: 10px 0;
     font-size: 25px;
     padding: 20px;
+  }
+
+  .some-facts{
+      width: auto;
+      margin: 0 auto;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .facts-left{
+      padding: 0;  
+      width: auto;    
+  }
+
+  .facts-title{
+      text-align: center;
+  }
+
+  .cards{
+      width: auto;
+      padding: 20px 0;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      grid-row-gap: 20px;
   }
 
   .hidden {
