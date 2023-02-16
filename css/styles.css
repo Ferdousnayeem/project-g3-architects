@@ -132,6 +132,12 @@ li > a {
   text-align: start;
 }
 
+.feature-speciality {
+  width: 1440px;
+  display: flex;
+  padding: 50px 0 0 0;
+}
+
 .feature-speciality-left {
   padding: 0 50px;
 }
@@ -139,11 +145,6 @@ li > a {
 .feature-speciality-right {
   display: flex;
   flex-direction: column;
-}
-
-.feature-speciality {
-  width: 1440px;
-  display: flex;
 }
 
 .feature-special-title {
@@ -325,7 +326,7 @@ li > a {
   }
   .feature-speciality {
     width: auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .feature-special-title {
     font-size: 30px;
