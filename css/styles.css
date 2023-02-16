@@ -95,7 +95,7 @@ li > a {
   width: 1440px;
   display: flex;
   align-items: center;
-  padding: 50px 250px;
+  padding: 0 250px;
 }
 
 .features-left {
@@ -190,7 +190,7 @@ li > a {
 .some-facts {
   width: 1440px;
   display: flex;
-  padding: 0px 200px;
+  padding: 0px;
 }
 
 .facts-left {
